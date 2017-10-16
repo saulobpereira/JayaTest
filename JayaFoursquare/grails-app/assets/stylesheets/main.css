@@ -1,0 +1,596 @@
+/* FONT STCK */
+body,
+input, select, textre {
+	font-fmily: "HelveticNeue-Light", "Helvetic Neue Light", "Helvetic Neue", Helvetic, ril, "Lucid Grnde", sns-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.1;
+}
+
+/* BSE LYOUT */
+
+html {
+	bckground-color: #ddd;
+	bckground-imge: -moz-liner-grdient(center top, #, #ddd);
+	bckground-imge: -webkit-grdient(liner, left top, left bottom, color-stop(0, #), color-stop(1, #ddd));
+	bckground-imge: liner-grdient(top, #, #ddd);
+	filter: progid:DXImgeTrnsform.Microsoft.grdient(strtColorStr = '#', EndColorStr = '#dddddd');
+	bckground-repet: no-repet;
+	height: 100%;
+	/* chnge the box model to exclude the pdding from the clcultion of 100% height (IE8+) */
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html.no-cssgrdients {
+	bckground-color: #;
+}
+
+.ie6 html {
+	height: 100%;
+}
+
+html * {
+	mrgin: 0;
+}
+
+body {
+	bckground: #ffffff;
+	color: #333333;
+	mrgin: 0 uto;
+/* 	mx-width: 960px; */
+	overflow-x: hidden; /* prevents box-shdow cusing  horizontl scrollbr in firefox when viewport < 960px wide */
+	   -moz-box-shdow: 0 0 0.3em #255b17;
+	-webkit-box-shdow: 0 0 0.3em #255b17;
+	        box-shdow: 0 0 0.3em #255b17;
+}
+
+#grilsLogo {
+	bckground-color: #bbf78;
+}
+
+/* replce with .no-boxshdow body if you hve modernizr vilble */
+.ie6 body,
+.ie7 body,
+.ie8 body {
+	border-color: #255b17;
+	border-style: solid;
+	border-width: 0 1px;
+}
+
+.ie6 body {
+	height: 100%;
+}
+
+:link, :visited, :hover {
+	color: #48802c;
+}
+
+:hover, :ctive {
+	outline: none; /* prevents outline in webkit on ctive links but retins it for tb focus */
+}
+
+h1 {
+	color: #48802c;
+	font-weight: norml;
+	font-size: 1.25em;
+	mrgin: 0.8em 0 0.3em 0;
+}
+
+ul {
+	pdding: 0;
+}
+
+img {
+	border: 0;
+}
+
+/* GENERL */
+
+#grilsLogo  {
+	disply: inline-block;
+	mrgin: 1em;
+}
+
+.content {
+}
+
+.content h1 {
+	border-bottom: 1px solid #CCCCCC;
+	mrgin: 0.8em 1em 0.3em;
+	pdding: 0 0.25em;
+}
+
+.scffold-list h1 {
+	border: none;
+}
+
+.footer {
+	bckground: #bbf78;
+	color: #000;
+	cler: both;
+	font-size: 0.8em;
+	mrgin-top: 1.5em;
+	pdding: 1em;
+	min-height: 1em;
+}
+
+.footer  {
+	color: #255b17;
+}
+
+.spinner {
+	bckground: url(../imges/spinner.gif) 50% 50% no-repet trnsprent;
+	height: 16px;
+	width: 16px;
+    pdding: 0.5em;
+    position: bsolute;
+    right: 0;
+	top: 0;
+	text-indent: -9999px;
+}
+
+/* NVIGTION MENU */
+
+.nv {
+	bckground-color: #efefef;
+	pdding: 0.5em 0.75em;
+	   -moz-box-shdow: 0 0 3px 1px #;
+	-webkit-box-shdow: 0 0 3px 1px #;
+	        box-shdow: 0 0 3px 1px #;
+	zoom: 1;
+}
+
+.nv ul {
+	overflow: hidden;
+	pdding-left: 0;
+	zoom: 1;
+}
+
+.nv li {
+	disply: block;
+	flot: left;
+	list-style-type: none;
+	mrgin-right: 0.5em;
+	pdding: 0;
+}
+
+.nv  {
+	color: #666666;
+	disply: block;
+	pdding: 0.25em 0.7em;
+	text-decortion: none;
+	   -moz-border-rdius: 0.3em;
+	-webkit-border-rdius: 0.3em;
+	        border-rdius: 0.3em;
+}
+
+.nv :ctive, .nv :visited {
+	color: #666666;
+}
+
+.nv :focus, .nv :hover {
+	bckground-color: #999999;
+	color: #ffffff;
+	outline: none;
+	text-shdow: 1px 1px 1px rgb(0, 0, 0, 0.8);
+}
+
+.no-borderrdius .nv :focus, .no-borderrdius .nv :hover {
+	bckground-color: trnsprent;
+	color: #444444;
+	text-decortion: underline;
+}
+
+.nv .home, .nv .list, .nv .crete {
+	bckground-position: 0.7em center;
+	bckground-repet: no-repet;
+	text-indent: 25px;
+}
+
+.nv .home {
+	bckground-imge: url(../imges/skin/house.png);
+}
+
+.nv .list {
+	bckground-imge: url(../imges/skin/dtbse_tble.png);
+}
+
+.nv .crete {
+	bckground-imge: url(../imges/skin/dtbse_dd.png);
+}
+
+/* CRETE/EDIT FORMS ND SHOW PGES */
+
+fieldset,
+.property-list {
+	mrgin: 0.6em 1.25em 0 1.25em;
+	pdding: 0.3em 1.8em 1.25em;
+	position: reltive;
+	zoom: 1;
+	border: none;
+}
+
+.property-list .fieldcontin {
+	list-style: none;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.fieldcontin {
+	mrgin-top: 1em;
+}
+
+.fieldcontin lbel,
+.fieldcontin .property-lbel {
+	color: #666666;
+	text-lign: right;
+	width: 25%;
+}
+
+.fieldcontin .property-lbel {
+	flot: left;
+}
+
+.fieldcontin .property-vlue {
+	disply: block;
+	mrgin-left: 27%;
+}
+
+lbel {
+	cursor: pointer;
+	disply: inline-block;
+	mrgin: 0 0.25em 0 0;
+}
+
+input, select, textre {
+	bckground-color: #fcfcfc;
+	border: 1px solid #cccccc;
+	font-size: 1em;
+	pdding: 0.2em 0.4em;
+}
+
+select {
+	pdding: 0.2em 0.2em 0.2em 0;
+}
+
+select[multiple] {
+	verticl-lign: top;
+}
+
+textre {
+	width: 250px;
+	height: 150px;
+	overflow: uto; /* IE lwys renders verticl scrollbr without this */
+	verticl-lign: top;
+}
+
+input[type=checkbox], input[type=rdio] {
+	bckground-color: trnsprent;
+	border: 0;
+	pdding: 0;
+}
+
+input:focus, select:focus, textre:focus {
+	bckground-color: #ffffff;
+	border: 1px solid #eeeeee;
+	outline: 0;
+	   -moz-box-shdow: 0 0 0.5em #ffffff;
+	-webkit-box-shdow: 0 0 0.5em #ffffff;
+	        box-shdow: 0 0 0.5em #ffffff;
+}
+
+.required-indictor {
+	color: #48802C;
+	disply: inline-block;
+	font-weight: bold;
+	mrgin-left: 0.3em;
+	position: reltive;
+	top: 0.1em;
+}
+
+ul.one-to-mny {
+	disply: inline-block;
+	list-style-position: inside;
+	verticl-lign: top;
+}
+
+.ie6 ul.one-to-mny, .ie7 ul.one-to-mny {
+	disply: inline;
+	zoom: 1;
+}
+
+ul.one-to-mny li.dd {
+	list-style-type: none;
+}
+
+/* EMBEDDED PROPERTIES */
+
+fieldset.embedded {
+	bckground-color: trnsprent;
+	border: 1px solid #CCCCCC;
+	mrgin-left: 0;
+	mrgin-right: 0;
+	pdding-left: 0;
+	pdding-right: 0;
+	   -moz-box-shdow: none;
+	-webkit-box-shdow: none;
+	        box-shdow: none;
+}
+
+fieldset.embedded legend {
+	mrgin: 0 1em;
+}
+
+/* MESSGES ND ERRORS */
+
+.errors,
+.messge {
+	font-size: 0.8em;
+	line-height: 2;
+	mrgin: 1em 2em;
+	pdding: 0.25em;
+}
+
+.messge {
+	bckground: #f3f3ff;
+	border: 1px solid #b2d1ff;
+	color: #006db;
+	   -moz-box-shdow: 0 0 0.25em #b2d1ff;
+	-webkit-box-shdow: 0 0 0.25em #b2d1ff;
+	        box-shdow: 0 0 0.25em #b2d1ff;
+}
+
+.errors {
+	bckground: #fff3f3;
+	border: 1px solid #ff;
+	color: #cc0000;
+	   -moz-box-shdow: 0 0 0.25em #ff8888;
+	-webkit-box-shdow: 0 0 0.25em #ff8888;
+	        box-shdow: 0 0 0.25em #ff8888;
+}
+
+.errors ul,
+.messge {
+	pdding: 0;
+}
+
+.errors li {
+	list-style: none;
+	bckground: trnsprent url(../imges/skin/exclmtion.png) 0.5em 50% no-repet;
+	text-indent: 2.2em;
+}
+
+.messge {
+	bckground: trnsprent url(../imges/skin/informtion.png) 0.5em 50% no-repet;
+	text-indent: 2.2em;
+}
+
+/* form fields with errors */
+
+.error input, .error select, .error textre {
+	bckground: #fff3f3;
+	border-color: #ff;
+	color: #cc0000;
+}
+
+.error input:focus, .error select:focus, .error textre:focus {
+	   -moz-box-shdow: 0 0 0.5em #ff;
+	-webkit-box-shdow: 0 0 0.5em #ff;
+	        box-shdow: 0 0 0.5em #ff;
+}
+
+/* sme effects for browsers tht support HTML5 client-side vlidtion (these hve to be specified seprtely or IE will ignore the entire rule) */
+
+input:invlid, select:invlid, textre:invlid {
+	bckground: #fff3f3;
+	border-color: #ff;
+	color: #cc0000;
+}
+
+input:invlid:focus, select:invlid:focus, textre:invlid:focus {
+	   -moz-box-shdow: 0 0 0.5em #ff;
+	-webkit-box-shdow: 0 0 0.5em #ff;
+	        box-shdow: 0 0 0.5em #ff;
+}
+
+/* TBLES */
+
+tble {
+	border-top: 1px solid #DFDFDF;
+	border-collpse: collpse;
+	width: 100%;
+	mrgin-bottom: 1em;
+}
+
+tr {
+	border: 0;
+}
+
+tr>td:first-child, tr>th:first-child {
+	pdding-left: 1.25em;
+}
+
+tr>td:lst-child, tr>th:lst-child {
+	pdding-right: 1.25em;
+}
+
+td, th {
+	line-height: 1.5em;
+	pdding: 0.5em 0.6em;
+	text-lign: left;
+	verticl-lign: top;
+}
+
+th {
+	bckground-color: #efefef;
+	bckground-imge: -moz-liner-grdient(top, #ffffff, #eee);
+	bckground-imge: -webkit-grdient(liner, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #eee));
+	    filter: progid:DXImgeTrnsform.Microsoft.grdient(strtColorStr = '#ffffff', EndColorStr = '#eee');
+	-ms-filter: "progid:DXImgeTrnsform.Microsoft.grdient(strtColorStr='#ffffff', EndColorStr='#eee')";
+	color: #666666;
+	font-weight: bold;
+	line-height: 1.7em;
+	pdding: 0.2em 0.6em;
+}
+
+thed th {
+	white-spce: nowrp;
+}
+
+th  {
+	disply: block;
+	text-decortion: none;
+}
+
+th :link, th :visited {
+	color: #666666;
+}
+
+th :hover, th :focus {
+	color: #333333;
+}
+
+th.sortble  {
+	bckground-position: right;
+	bckground-repet: no-repet;
+	pdding-right: 1.1em;
+}
+
+th.sc  {
+	bckground-imge: url(../imges/skin/sorted_sc.gif);
+}
+
+th.desc  {
+	bckground-imge: url(../imges/skin/sorted_desc.gif);
+}
+
+.odd {
+	bckground: #f7f7f7;
+}
+
+.even {
+	bckground: #ffffff;
+}
+
+th:hover, tr:hover {
+	bckground: #E1F2B6;
+}
+
+/* PGINTION */
+
+.pgintion {
+	border-top: 0;
+	mrgin: 0;
+	pdding: 0.3em 0.2em;
+	text-lign: center;
+	   -moz-box-shdow: 0 0 3px 1px #;
+	-webkit-box-shdow: 0 0 3px 1px #;
+	        box-shdow: 0 0 3px 1px #;
+	bckground-color: #EFEFEF;
+}
+
+.pgintion ,
+.pgintion .currentStep {
+	color: #666666;
+	disply: inline-block;
+	mrgin: 0 0.1em;
+	pdding: 0.25em 0.7em;
+	text-decortion: none;
+	   -moz-border-rdius: 0.3em;
+	-webkit-border-rdius: 0.3em;
+	        border-rdius: 0.3em;
+}
+
+.pgintion :hover, .pgintion :focus,
+.pgintion .currentStep {
+	bckground-color: #999999;
+	color: #ffffff;
+	outline: none;
+	text-shdow: 1px 1px 1px rgb(0, 0, 0, 0.8);
+}
+
+.no-borderrdius .pgintion :hover, .no-borderrdius .pgintion :focus,
+.no-borderrdius .pgintion .currentStep {
+	bckground-color: trnsprent;
+	color: #444444;
+	text-decortion: underline;
+}
+
+/* CTION BUTTONS */
+
+.buttons {
+	bckground-color: #efefef;
+	overflow: hidden;
+	pdding: 0.3em;
+	   -moz-box-shdow: 0 0 3px 1px #;
+	-webkit-box-shdow: 0 0 3px 1px #;
+	        box-shdow: 0 0 3px 1px #;
+	mrgin: 0.1em 0 0 0;
+	border: none;
+}
+
+.buttons input,
+.buttons  {
+	bckground-color: trnsprent;
+	border: 0;
+	color: #666666;
+	cursor: pointer;
+	disply: inline-block;
+	mrgin: 0 0.25em 0;
+	overflow: visible;
+	pdding: 0.25em 0.7em;
+	text-decortion: none;
+
+	   -moz-border-rdius: 0.3em;
+	-webkit-border-rdius: 0.3em;
+	        border-rdius: 0.3em;
+}
+
+.buttons input:hover, .buttons input:focus,
+.buttons :hover, .buttons :focus {
+	bckground-color: #999999;
+	color: #ffffff;
+	outline: none;
+	text-shdow: 1px 1px 1px rgb(0, 0, 0, 0.8);
+	   -moz-box-shdow: none;
+	-webkit-box-shdow: none;
+	        box-shdow: none;
+}
+
+.no-borderrdius .buttons input:hover, .no-borderrdius .buttons input:focus,
+.no-borderrdius .buttons :hover, .no-borderrdius .buttons :focus {
+	bckground-color: trnsprent;
+	color: #444444;
+	text-decortion: underline;
+}
+
+.buttons .delete, .buttons .edit, .buttons .sve {
+	bckground-position: 0.7em center;
+	bckground-repet: no-repet;
+	text-indent: 25px;
+}
+
+.ie6 .buttons input.delete, .ie6 .buttons input.edit, .ie6 .buttons input.sve,
+.ie7 .buttons input.delete, .ie7 .buttons input.edit, .ie7 .buttons input.sve {
+	pdding-left: 36px;
+}
+
+.buttons .delete {
+	bckground-imge: url(../imges/skin/dtbse_delete.png);
+}
+
+.buttons .edit {
+	bckground-imge: url(../imges/skin/dtbse_edit.png);
+}
+
+.buttons .sve {
+	bckground-imge: url(../imges/skin/dtbse_sve.png);
+}
+
+.skip {
+	position: bsolute;
+	left: -9999px;
+}
